@@ -1,0 +1,490 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin:0;
+    padding:0;
+    background-image: url(./images/body-bg.png);
+}
+
+/*  Nav bar */
+.nav{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3000;
+    padding: 17px;
+    box-shadow: 2px 2px 5px rgb(187, 187, 187), -0.5px 0 .1px rgb(187, 187, 187);
+}
+
+.nav a{
+    position: relative;
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 14px;
+   
+}
+
+.nav a:hover{
+    color: #854fee;
+}
+
+#home:visited{
+    color: #854fee;
+
+}
+
+.nav-a{
+    margin-right: 20px;
+    margin-left: 400px;
+}
+#logo{
+position: absolute;
+left:20px;
+right: 20px;
+    margin-right: 40px;
+    margin-left: 100px;
+}
+
+/*     ===========  Home     ========================== */ 
+
+
+#img-cover-home{
+    background-size: cover;
+    width: 95%;
+}
+
+
+
+.home-banner{
+    display: flex;
+    position: relative;
+}
+.home-into{
+    position: absolute;
+    width: 80%;
+    left: 120px;
+    top:170px
+}
+
+.home-into h1 ,h3 ,h5{
+    text-transform: uppercase;
+    
+}
+
+form input{
+    justify-content: left;
+    bottom: 600px;
+    text-transform: uppercase;
+    padding: 20px;
+    left:250px;
+    width: 10%;
+    border:2px solid #854fee;
+    border-radius: 2px;
+
+
+}
+
+#input-1{
+    color: white;
+    background-color: #854fee;
+    padding: 10px;
+    margin: 10px;
+}
+#input-2{
+    color: black;
+    background-color: white;
+    padding: 10px;
+   
+}
+
+.home-img-right{
+    display: flex;
+    position: absolute;
+    right: 120px;
+    top:150px;
+    width:500px;
+    height: 450px;
+        
+}
+
+/*     ===========  About      ========================== */ 
+.about{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.about-img{
+    display: flex;
+    width: 700px;
+    height: 500px;
+        
+}
+
+
+.about-info{
+    display: block;
+    text-align: left!important;
+    margin-left: 10%;
+
+}
+
+.about-info h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 50px;
+    text-transform: uppercase;}
+
+
+   .about-info h1, h2, h3, h4, h6 {
+        font-family: Arial, Helvetica,sans-serif;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .about  .about-info p {
+        margin-top: 0;
+        margin-bottom: 20px;
+        width: 70%;
+        color: #777777;
+    }
+
+    .about-info .Download-cv {
+        margin-top: 20px;
+    }
+
+    .Download-cv {
+        display: inline-block;
+        color: #fff;
+        font-family: monospace ,sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 46px;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color:#854fee;
+        text-decoration: none;
+        padding: 3px 25px;
+    }
+
+    /*     ===========  logo     ========================== */ 
+
+    .logo-items {
+        display: grid;
+        grid-template-columns: repeat(3,200px);
+        grid-template-rows: repeat(3,140px);
+        margin-left: 100px;
+        margin-top: 100px;
+        width: 60%;
+        row-gap: 20px;
+        position: relative;
+    }
+    .logo-items img{
+        box-shadow: 1px 1px  3px #777777;
+        padding: 40px;
+        width: 90%;
+        height: 90%;
+
+    }
+
+
+
+    .aside-logo-right{
+        margin-left: 20%;
+        margin-top: 70px;
+        width: 30%;
+        height: 65%;
+        position: absolute;
+        right: 80px;
+        background-color: hsl(0, 6%, 87%);
+        top: 1200px;
+        padding: 40px;
+}
+
+
+    .years{
+        display:inline-flex ;
+        position: absolute;
+        left: 10px;
+        font-size: 80px;
+        color: #854fee;
+        font-weight: bold;
+        margin-left: 10%;
+       
+    }
+    .data-work{
+        display: inline-flex;
+        margin-left: 100px;   
+        width: 10%;
+        font-size: 20px;
+        bottom: 300px;
+
+}
+    .material-icons{
+            display: flex;
+            position: absolute;
+            margin: 10px;
+            bottom: 90px;
+            font-size: 60px;
+    }
+    .info-call {
+        display: block;
+        position: absolute;
+        right: 120px;
+        bottom: 80px;
+        
+    }
+    #call-us{
+        color:#854fee;
+text-transform: uppercase;
+font-size: 15px;
+    }
+    .info-call h3{
+        font-weight: bolder;
+    }
+
+
+    /*   ============   SERvices & Client  ============  */
+.services ,  .client{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+    color: #777777;
+    margin-bottom: 40px;
+}
+
+.services h2 ,  .client h2{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.ser-vice-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+
+
+
+}
+
+.service-items-offer {
+   width: 100%;
+    background-color: #f9f9fd;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+.service-items-offer h4 {
+    font-weight: bolder;
+}
+.service-items-offer p , .client p{
+    color: #777777;
+}
+
+
+/* quality-part */
+
+.quality-part h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    
+}
+
+.link-quality-part{
+    padding: 10px;
+    margin-top: 80px;
+    margin-left: 10%;
+}
+
+.link-quality-part a{
+    text-decoration:none;
+    font-size: 15px;
+    padding: 14px;
+    text-transform: uppercase;
+    color: black;
+    padding: 20px;
+   }
+
+   .link-quality-part a:hover{
+       color: #854fee;
+   }
+   #following:visited{
+    color: #854fee;
+
+}
+.img-quality-part{
+    display: flex;
+    color: #777777;
+    width: 40%;
+    margin-left: 8%;
+    margin-bottom: 20px;
+    
+}
+.img-quality-part img{
+    width: 300px;
+    height: 350px; 
+}
+
+#img-fly-male{
+    width: 250px;
+    height: 300px;
+}
+.img-quality-part h4  , .client1_text h4 ,.client2_text h4{
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+
+}
+/* Client information */
+.persons{
+    display:flex;
+    margin: 150px 50px;
+  
+   
+}
+
+.client-person-1 , .client-person-2{  
+    width: 50%;
+    position: relative;
+    box-shadow: 1px 1px 10px #777777 , -1px -1px 10px #777777;
+    margin: 0 40px;
+    padding: 20px;
+ }
+.client1_text , .client2_text{
+    display: inline;
+    position: absolute;
+    width: 50%;
+    color: #777777;
+    margin-left:50px;
+}
+
+.points{
+    display: flex;   
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+.points input:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: lightgray;
+    content: '';
+    display: inline-block;
+    border: 2px solid white;
+}
+
+/* Points checked */
+
+.points input:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #854fee;
+    content: '';
+    display: inline-block;
+    border: 2px solid white;
+}
+
+
+/*    -----  ---------------   Update Part           ---------------------------- */
+.update{
+    width: 75%;
+    margin: 5% 12%;
+    height: 40%;
+    background-color: #854fee;
+    color: white;
+    font-size: 20px;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.update h3{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.up-date-em{
+    margin:90px 0;
+}
+
+#email{
+ 
+    min-width: 380px;
+    max-width: 380px;
+    line-height: 44px;
+    padding: 0 22px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    font-weight: 400;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+#get-start{
+    margin-left: 10px;
+    background: white;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 5px;
+    line-height: 44px;
+    font-size: 14px;
+    font-family:cursive;
+    font-weight: bold;
+    padding: 0px 28px;
+    cursor: pointer;
+
+}
+.update ::placeholder{
+    color:white;
+
+}
+
+/* -----------------      Socail media   - final part        ------------------ */
+.end-part{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin: 40px 0;
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
